@@ -38,7 +38,7 @@ namespace Dio.Desafio
 
         public Serie RetornaPorId(int id)
         {
-            return listaSeries[id];
+            return listaSeries.FirstOrDefault(_ => _.Id == id);
         }
     }
 }
